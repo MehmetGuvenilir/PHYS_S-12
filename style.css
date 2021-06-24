@@ -11,3 +11,15 @@ p {font-size: 16px;}
   padding: 30px;
   padding-bottom: 70px;
 }
+
+a:link {
+  color: orangered;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: cadetblue;
+  background-color: transparent;
+  text-decoration: none;
+}
