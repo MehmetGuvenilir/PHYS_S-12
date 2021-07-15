@@ -103,15 +103,16 @@
             <div class="row margin_bottom_30">
                <!-- featured image -->
                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5" data-wow-duration="1s">
-                  <div class="full">
-                     <div class="center"><img src="week7/images/week4.1.png" alt="#" /></div> <br> <br>
-                     <div class="center"><img src="week7/images/week4.2.png" alt="#" /></div>
+                  <div class="full"><br><br><br>
+                     <div class="center"><img src="week7/images/week7.1.png" alt="#" /></div> <br> <br><br><br><br><br>
+                     <img src="week7/images/week7.2.jpg" alt="#" style="width:1400px;height:500px;"> <br><br><br><br>
+                      <img src="week7/images/week7.3.jpg" alt="#" style="width:1400px;height:700px;"> <br><br><br>
 
-                     <video width="720" height="540" controls muted>
-                     <source src="week7/images/Week 4 Harvard v12.mp4" type="video/mp4"> 
+                     <!-- <video width="720" height="540" controls muted>
+                     <source src="week7/images/Week 4 Harvard v12.mp4" type="video/mp4">  -->
 
-                     <a href='week7/images/Week 4 Harvard v12.stl'>Download my STL file</a>
-                     <!-- <a download href='Geometric Toothbrush Holder.gcode'>Download my toothbrush holder gcode file here</a> -->
+                     <!-- <a href='week7/images/Week 4 Harvard v12.stl'>Download my STL file</a> -->
+                    
 
                   </div>
                </div>
@@ -120,7 +121,9 @@
                <div class="col-md-6 cont_theme_blog">
                   <div class="full">
                      <h3>Using the Thermistor</h3>
-                     <p>
+                     <p>For this assignment, I wanted to try and use the thermistor. I had no prior knowledge about using sensors such as a thermistor; hence I started doing some research. After looking at some different designs, I decided to use the schemtaic on <a rel="nofollow" href="https://create.arduino.cc/projecthub/Marcazzan_M/how-easy-is-it-to-use-a-thermistor-e39321">this website. </a>You can see the circuit design from Tinkercad on the left. For this circuit, I cut and stripped a few new wires. It was quite easy to build the circuit. Now, I needed a code to get the thermistor to work. <br> <br>
+
+                     I came across this Arduino code which was written to get readings from the thermistor. I uploaded the code to my Metro Board but couldn't get it to work. After going through the code for a while, I realized that I had forgotten to change the pin that the thermistor was connected to. After fixing this mistake from the code, I was able to get some readings. (You can see the code that I used and the Serial Monitor page below). However, the values that I was getting were not transferred to real temperature units. I wanted my code to convert the results, so I started to search for a different code.
                      </p>
                   </div>
                </div>
@@ -130,8 +133,10 @@
                <!-- featured cont -->
                <div class="col-md-6 cont_theme_blog">
                   <div class="full">
-                     <h3>Building the Assembly</h3>
-                     <p> </p> <br><br>
+                     <h3>Converting the Values & Different Setups</h3>
+                     <p>I found a different code (<a rel="nofollow" href="https://create.arduino.cc/projecthub/iasonas-christoulakis/make-an-arduino-temperature-sensor-thermistor-tutorial-b26ed3">from this website</a>) that would convert the values to Fahrenheit. I copied and pasted this code, and uploaded it to my Metro Board after arranging the pins according to the circuit that I had built. This seemed to work as I wanted. I was now converting the readings to Fahrenheit. I tried holding the thermister to see how to data would change. However, there seemed to be a slight issue. The temperature was falling when I held the thermistor insted of rising. I wenth through the code to see if there is anything that I can fix. I wasn't able to fix this problem from the code, so I decided to do some more research to see if anyone else had a similar problem. On a forum, someone mentioned that switching the components might help with this problem. It was worth a try, so I altered the circuit a little bit and switched the places of the resistor and the thermistor. This seemed to work, and the temperature was now increasing as I held onto the thermistor. I transferred the readings from Fahrenheit to Celcius via an <a rel="nofollow" href="https://www.google.pt/search?q=fahrenheit+to+degrees&bih=896&biw=1680&hl=en&ei=uDLwYIDVG8WD9u8P7-eA8AQ&oq=fahrenheit+to+degrees&gs_lcp=Cgdnd3Mtd2l6EAMyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgUIABCRAjoICC4QxwEQowI6AgguOgQIABBDOgQIABAKOgQILhBDSgQIQRgAUNfSEVj3hBJgtoYSaAhwAngAgAGVAYgB1RuSAQQwLjI5mAEAoAEBqgEHZ3dzLXdperABAMABAQ&sclient=gws-wiz&ved=0ahUKEwiAkbyPkuXxAhXFgf0HHe8zAE4Q4dUDCA4&uact=5">online converter</a>. The readings were surprisingly pretty close to the actual temperature of the weather. <br><br>
+
+                      I wanted to also try the thermistor with more inetnse temperatures. I got the idea of pouring boiled water in a glass, and measuring it with the thermistor. However, I was scared that I would damage the circuit with the hot water. From <a rel="nofollow" href="https://wujibi123.github.io/PHYS_S-12/07_ElectronicInput/index.html#test">Dan's Documentation</a>, I got the idea of using alligator clips. So I once again slightly changed the circuit design and attached the thermistor to alligator clips. I touched the thermistor to the hot glass, and saw that the readings increased more than when I was just touching the thermistor. This was a quite fun circuit design to play around with. (You can see the codes, readings, and the circuits below)...</p> <br><br>
                   </div>
                </div>
                <!-- end featured cont -->
@@ -139,19 +144,20 @@
                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5" data-wow-duration="1s">
                   <div class="full">
                      <br><br><br><br><br><br>
-                     <div class="center"><img src="week7/images/week4.3.jpg" alt="#" /></div> <br><br>
-                     <div class="center"><img src="week7/images/week4.4.jpg" alt="#" /></div><br><br>
-                     <div class="center"><img src="week7/images/week4.5.jpg" alt="#" /></div><br><br>
-                     <div class="center"><img src="week7/images/week4.6.jpg" alt="#" /></div><br><br>
-                     <div class="center"><img src="week7/images/week4.7.jpg" alt="#" /></div><br><br>
-                     <div class="center"><img src="week7/images/week4.8.jpg" alt="#" /></div><br><br>
-                     <div class="center"><img src="week7/images/week4.9.jpg" alt="#" /></div><br><br>
+                     <div class="center"><img src="week7/images/week7.5.jpg" alt="#" /></div> <br><br>
+                     <div class="center"><img src="week7/images/week7.6.jpg" alt="#" /></div><br><br>
+                     <div class="center"><img src="week7/images/week7.7.jpg" alt="#" /></div><br><br>
+                     <!-- <div class="center"><img src="week7/images/week7.8.jpg" alt="#" /></div><br><br>
+                     <div class="center"><img src="week7/images/week7.9.jpg" alt="#" /></div><br><br> -->
+                     
                   </div>
 
                </div>
+               <img src="week7/images/week7.10.jpg" alt="#" style="width:1400px;height:500px;"> <br><br>
+               <img src="week7/images/week7.4.png" alt="#" style="width:1400px;height:700px;"> <br><br><br><br>
 
                 <br><br><br><br><br><br><br><br>
-                  <img src="week7/images/week4.10.jpg" alt="#" style="width:1400px;height:500px;"> <br><br><br><br><br><br><br><br><br><br><br><br>
+                  <!-- <img src="week7/images/week4.10.jpg" alt="#" style="width:1400px;height:500px;"> <br><br><br><br><br><br><br><br><br><br><br><br> -->
 
                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5" data-wow-duration="1s">
                   <div class="full">
@@ -174,8 +180,8 @@
                   </div>
                </div>
 
-               <video width="720" height="540" controls muted>
-                     <source src="week7/images/IMG_5753.mp4" type="video/mp4"> 
+              <!--  <video width="720" height="540" controls muted>
+                     <source src="week7/images/IMG_5753.mp4" type="video/mp4">  -->
 
 
                <!-- end featured cont -->
