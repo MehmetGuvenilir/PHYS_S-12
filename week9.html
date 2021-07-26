@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Auricle - The Multi-Purpose Responsive HTML5 Template</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- site icons -->
+      <link rel="icon" href="week2/images/fevicon/fevicon.png" type="image/png" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="week5/css/bootstrap.min.css" />
+      <!-- site css -->
+      <link rel="stylesheet" href="week5/css/style.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" href="week5/css/responsive.css" />
+      <!-- colors css -->
+      <link rel="stylesheet" href="week5/css/colors.css" />
+      <!-- wow animation css -->
+      <link rel="stylesheet" href="week5/css/animate.css" />
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body id="default_theme" class="home_page1">
+      <!-- header -->
+      <header class="header header_style1">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-9 col-lg-10">
+                  <div class="logo"><a href="index.html"><img src="week2/images/logo.png" alt="#" /></a></div>
+                  <div class="main_menu float-right">
+                     <div class="menu">
+                        <ul class="clearfix">
+                           <!-- <li class="active"><a href="index.html">Home</a></li> -->
+                           <!-- <li><a href="about.html">About</a></li>
+                           <li><a href="service.html">Service</a></li>
+                           <li><a href="screenshots.html">Screenshots</a></li>
+                           <li><a href="pricing.html">Pricing</a></li>
+                           <li><a href="team.html">Team</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3 col-lg-2">
+                  <div class="right_bt"><a class="bt_main" href="week1/index.html">Get Support</a> </div> -->
+               </div>
+            </div>
+         </div>
+      </header>
+      <section id="banner_parallax" class="slide_banner1">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="full">
+                     <div class="slide_cont">
+                        <h2>WEEK 9</h2>
+                        <h4>Networking / IoT</h4>
+                        <!-- <div class="full slide_bt"> <a class="white_bt bt_main" href="index.html">Download</a> </div> -->
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="full">
+                     <!-- <div class="slide_pc_img wow fadeInRight" data-wow-delay="1s" data-wow-duration="2s"> <img src="week1/images/pc-banner.png" alt="#" /> </div> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end header -->
+      <!-- section -->
+      <section class="layout_padding padding_top_0">
+         <div class="container">
+            <div class="row margin_bottom_30">
+               <!-- featured cont -->
+               <div class="col-md-6 cont_theme_blog">
+                  <div class="full">
+                     <h3>ASSIGNMENTS</h3>
+                     <p> 1. Control a board from a local wireless network. Program a microcontroller to obtain and respond to information from the internet. Optionally, work with a partner to control a device over a remote server.<br><br> 
+                     </p>
+
+                  </div>
+               </div>
+               <!-- end featured cont -->
+               <!-- featured image -->
+               <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5" data-wow-duration="1s">
+                  <div class="full">
+                     <!-- <div class="center"><img src="week1/images/ser1.png" alt="#" /></div> -->
+                  </div>
+               </div>
+               <!-- end featured image -->
+            </div>
+            <div class="row margin_bottom_30">
+               <!-- featured image -->
+               <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5" data-wow-duration="1s">
+                  <div class="full">
+                     <div class="center"><img src="week9/images/week9.1.png" alt="#" /></div> <br><br> 
+                     <!-- <div class="center"><img src="week9/images/week9.2.png" alt="#" /></div> <br><br>  -->
+                     <!-- <div class="center"><img src="week9/images/week5.3.jpg" alt="#" /></div> <br><br> 
+                     <div class="center"><img src="week9/images/week5.4.png" alt="#" /></div> -->
+                  </div>
+               </div>
+               <!-- end featured image -->
+               <!-- featured cont -->
+               <div class="col-md-6 cont_theme_blog">
+                  <div class="full">
+                     <h3>Simple WiFi Server</h3>
+                     <p>This was my first time working with the Huzzah board, so I spent most of the lecture trying to configure Arduino IDE to work with the Huzzah. I installed the drivers and boards, and everything seemed to be working well. Now, I could start working on the code. Following the <a rel="nofollow" href="https://nathanmelenbrink.github.io/intro-dig-fab/09_networking/huzzah1.html">tutorial</a> on the website, I managed to create the simple Wifi server. <br></br>
+                     After I made the required changes on the example code, I built a basic circuit with one red LED. It was a bit of a challenge to figure out the pinout of the Huzzah Board, but with the help of <a rel="nofollow" href="https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts">this website</a>, I was able to figure out how to connect the wires. <br></br>
+                     With the circuit built, I uploaded the code to my Huzzah Board, and opened the Serial Monitor. I pressed the rest button on the Huzzah, and got my IP address. By pasting this address to my browser, I was able to open the website that would control my red LED. The ESP32 was now acting as a web server on my local network, and I was able to control the LED from different devices. This was a really fun project to work on.</p>
+                  </div>
+               </div>
+
+               <img src="week9/images/week9.2.png" alt="#" style="width:1000px;height:400px;"> <br><br> 
+
+
+               <!-- end featured cont -->
+            </div>
+            <div>
+            <br><br> <br><br> <video width="920" height="640" controls muted>
+                     <source src="week9/images/video1.mp4" type="video/mp4">  <br><br> <br><br> 
+            </div>
+
+            <div class="row margin_bottom_30">
+               <!-- featured cont -->
+               <div class="col-md-6 cont_theme_blog">
+                  <div class="full">
+                     <h3>Using Google Firebase</h3>
+                     <p>Now that I finished the Simple Wifi Server, I could start working on talking to my ESP32 from outside of my LAN. I decided to follow the <a rel="nofollow" href="https://nathanmelenbrink.github.io/intro-dig-fab/09_networking/huzzah1b.html">tutorial</a>, and use <a rel="nofollow" href="https://firebase.google.com/">Google Firebase</a>. I signed into Firebase, and created a new project for this week's assignment. I followed each step, and everything was seeming to function correctly. I already had the LED circuit built, so I uploaded the given code after making the required changes. <br><br> 
+                     I could now toggle the LED by writing ON/OFF on the screen. I also created a web interface using the given html code. Using Firebase, I made all of the required changes to the code, and managed to get the website working. I really liked how the buttons on the website were functioning, so I decided to use the web interface for my assignment as well.</p>
+
+                  </div>
+               </div>
+               <!-- end featured cont -->
+               <!-- featured image -->
+               <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5" data-wow-duration="1s">
+                  <div class="full">
+                     <br><br> <br><br> <br><br> 
+                     <div class="center"><img src="week9/images/week9.3.png" alt="#" /></div> <br>
+                     <!-- <div class="center"><img src="week9/images/week5.6.jpg" alt="#" /></div> <br> -->
+                    <!--  <div class="center"><img src="week9/images/week5.7.jpg" alt="#" /></div> <br>
+                     <div class="center"><img src="week9/images/week5.8.jpg" alt="#" /></div> <br> -->
+
+                  </div>
+               </div>
+
+               <div>
+                  <video width="920" height="640" controls muted>
+                     <source src="week9/images/video3.mp4" type="video/mp4">  <br><br>
+               </div>
+
+               
+               <div>
+                  <br><br>
+                  <video width="920" height="640" controls muted>
+                     <source src="week9/images/video2.mp4" type="video/mp4">  <br><br> 
+               </div>
+
+               <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5" data-wow-duration="1s">
+                  <div class="full">
+                     <!-- <div class="center"><img src="week5/images/week5.3.png" alt="#" /></div> -->
+                     <br><br><br><br><br><br><br><br><br><br><br><br>
+                     <div class="center"><img src="week9/images/week9.4.png" alt="#" /></div>
+                  </div>
+
+
+               </div>
+
+
+               <!-- end featured image -->
+               <!-- featured cont -->
+               <div class="col-md-6 cont_theme_blog">
+
+                  
+
+                  <div class="full">
+                     <h3>Wifi Controlled LED Strip</h3>
+                     <p>For the assignment I needed to program a microcontroller to obtain and respond to information from the internet. I had used the LED strip for week 8's assignment, and enjoyed it a lot. Therefore, I decided to try and control the LED strip via a web interface. I took the same example wifi code that used for the red LED, an changed several aspects on it. To be able to control the LED strip efficiently, I also downloaded an example LED code from Adafruit NeoPixel. I took some of the functions from this NeoPixel code, and merged it with my wifi code.<br><br> 
+                      I had to research some LED strip functions to make sure that everything would function correctly. I worked on the Arduino code for quite a bit, and everything seemed right. Finally, I needed to alter the html code of Firebase so that it would match the LED strip code that I had. I uploaded all of the new codes, and everything worked perfect. I had three functions on the web interface. <br><br> 
+                     The first one was called "rainbow" and it would create rainbow colors on the LED strip and trigger the respective function. The other one was called "theater", and would shine the  LED lights in a whole different way. I finally added an "Off" button to dim all of the lights on the LED strip. All the buttons and the functions worked perfectly. The only thing that seemed a bit off was the delay. Since the buttons trigerred the functions that I wrote down on Arduino, I had to wait for the loop to end until once before I can turn off all the LEDs. Nevertheless, I liked the way that the interface wasd working in the end, and I managed to control the LED strip through Wifi. </p>
+                  </div>
+
+               </div>
+               <!-- <div class="center"><img src="week9/images/week9.4.png" alt="#" /></div> -->
+
+
+               <div>
+                  <br><br> 
+                  <video width="920" height="640" controls muted>
+                     <source src="week9/images/video4.mp4" type="video/mp4">  <br><br>
+               </div>
+
+               <div class="col-md-6 cont_theme_blog">
+                  <div class="full">
+
+                    <!--  <h3>Assembly</h3> -->
+                     <p></p>
+                  </div>
+               </div>
+
+               <!-- end featured cont -->
+               <!-- featured image -->
+
+               <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5" data-wow-duration="1s">
+                  <div class="full">
+                     <<!-- div class="center"><img src="week9/images/week9.4.png" alt="#" /></div> -->
+                  </div>
+               </div>
+
+               <div>
+                  
+               </div>
+
+                <br><br> 
+
+
+               <!-- end featured image -->
+            <!-- </div>
+         </div>
+      </section> -->
+      <!-- end section -->
+      <!-- section -->
+      <!-- <section class="layout_padding gradiant_bg cross_layout">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="information_blogs">
+                     <div class="imf_icon"><img src="week1/images/icon1.png" alt="#" /></div>
+                     <div class="imf_head">
+                        <h3>Awesome Features</h3>
+                     </div>
+                     <div class="imf_cont">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium</p>
+                     </div>
+                     <div class="imf_read"><a href="#">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="information_blogs">
+                     <div class="imf_icon"><img src="week1/images/icon2.png" alt="#" /></div>
+                     <div class="imf_head">
+                        <h3>Creative Design</h3>
+                     </div>
+                     <div class="imf_cont">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium</p>
+                     </div>
+                     <div class="imf_read"><a href="#">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="information_blogs">
+                     <div class="imf_icon"><img src="week1/images/icon3.png" alt="#" /></div>
+                     <div class="imf_head">
+                        <h3>24 Hours Supports</h3>
+                     </div>
+                     <div class="imf_cont">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium</p>
+                     </div>
+                     <div class="imf_read"><a href="#">Read More</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+      <!-- end section -->
+      <!-- section -->
+      <!-- <section class="layout_padding layer_style">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="full text_align_center">
+                     <div class="heading_main center_head_border heading_style_1">
+                        <h2>Auricle <span>Features</span></h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row app-features">
+               <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="features-left">
+                     <li>
+                        <i class="flaticon-wordpress-logo"></i>
+                        <div class="fl-inner">
+                           <h4>WordPress Installation</h4>
+                           <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                        </div>
+                     </li>
+                     <li>
+                        <i class="flaticon-windows"></i>
+                        <div class="fl-inner">
+                           <h4>Browser Compatible</h4>
+                           <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                        </div>
+                     </li>
+                     <li>
+                        <i class="flaticon-price-tag"></i>
+                        <div class="fl-inner">
+                           <h4>eCommerce Ready</h4>
+                           <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                        </div>
+                     </li>
+                     <li>
+                        <i class="flaticon-new-file"></i>
+                        <div class="fl-inner">
+                           <h4>Easy to Customize</h4>
+                           <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-md-4 col-sm-6 col-xs-12">
+                  <ul class="features-right">
+                     <li>
+                        <i class="flaticon-pantone"></i>
+                        <div class="fr-inner">
+                           <h4>Limitless Colors</h4>
+                           <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                        </div>
+                     </li>
+                     <li>
+                        <i class="flaticon-cloud-computing"></i>
+                        <div class="fr-inner">
+                           <h4>Lifetime Update</h4>
+                           <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                        </div>
+                     </li>
+                     <li>
+                        <i class="flaticon-line-graph"></i>
+                        <div class="fr-inner">
+                           <h4>SEO Friendly</h4>
+                           <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                        </div>
+                     </li>
+                     <li>
+                        <i class="flaticon-coding"></i>
+                        <div class="fr-inner">
+                           <h4>Simple Clean Code</h4>
+                           <p>Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. </p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-md-4 wow fadeInRight" data-wow-delay="0.5" data-wow-duration="1s">
+                  <div class="full">
+                     <div class="center">
+                        <img src="week1/images/application_screen.png" alt="#" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+      <!-- end section -->
+      <!-- section -->
+      <!-- <section class="layout_padding gradiant_bg cross_layout">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="full text_align_center white_fonts">
+                     <div class="heading_main center_head_border heading_style_1">
+                        <h2>Easy <span>Steps</span></h2>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row step_section">
+               <div class="offset-xl-1 col-xl-10 col-md-12">
+                  <div class="row">
+                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="step_blog arrow_right_step">
+                           <div class="step_inner">
+                              <i class="fa fa-diamond"></i><br>
+                              <p>Go app store</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="step_blog">
+                           <div class="step_inner">
+                              <i class="fa fa-user"></i><br>
+                              <p>Create an Account</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="step_blog">
+                           <div class="step_inner">
+                              <i class="fa fa-download"></i><br>
+                              <p>Download & Install</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <div class="step_blog">
+                           <div class="step_inner">
+                              <i class="fa fa-thumbs-up"></i><br>
+                              <p>Enjoy & Rate us!</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+      <!-- end section -->
+      <!-- section -->
+      <!-- <section class="layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="full">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="full text_align_center">
+                           <div class="heading_main center_head_border heading_style_1">
+                              <h2>Table price</h2>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="full" style="margin-top:10px;">
+                     <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                           <div class="table_price text_align_center">
+                              <div class="table_price_head">
+                                 <h5>Basic</h5>
+                              </div>
+                              <div class="table_price_cont">
+                                 <div class="table_price_per">
+                                    <p>$29.00<br>
+                                       <small>/month</small>
+                                    </p>
+                                 </div>
+                                 <div class="table_price_cont_bottm">
+                                    <ul>
+                                       <li>100 MB Disk Space</li>
+                                       <li>2 Subdomains</li>
+                                       <li>5 Email Accounts</li>
+                                       <li>Customer Support 24/7</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="table_price_bottm"> <a class="bt_main" href="index.html">Buy now</a> </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                           <div class="active_price table_price text_align_center">
+                              <div class="table_price_head">
+                                 <h5>Standard</h5>
+                              </div>
+                              <div class="table_price_cont">
+                                 <div class="table_price_per">
+                                    <p>$39.00<br>
+                                       <small>/month</small>
+                                    </p>
+                                 </div>
+                                 <div class="table_price_cont_bottm">
+                                    <ul>
+                                       <li>100 MB Disk Space</li>
+                                       <li>2 Subdomains</li>
+                                       <li>5 Email Accounts</li>
+                                       <li>Customer Support 24/7</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="table_price_bottm"> <a class="reverse_bt bt_main" href="index.html">Buy now</a> </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                           <div class="table_price text_align_center">
+                              <div class="table_price_head">
+                                 <h5>Profesional</h5>
+                              </div>
+                              <div class="table_price_cont">
+                                 <div class="table_price_per">
+                                    <p>$45.00<br>
+                                       <small>/month</small>
+                                    </p>
+                                 </div>
+                                 <div class="table_price_cont_bottm">
+                                    <ul>
+                                       <li>100 MB Disk Space</li>
+                                       <li>2 Subdomains</li>
+                                       <li>5 Email Accounts</li>
+                                       <li>Customer Support 24/7</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="table_price_bottm"> <a class="bt_main" href="index.html">Buy now</a> </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+      <!-- end section -->
+      <!-- section -->
+      <!-- <section class="contact_section">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xs-12 col-sm-12 col-md-6" style="padding:0;">
+                  <div class="full">
+                     <div id="map"></div>
+                  </div>
+               </div>
+               <div class="col-xs-12 col-sm-12 col-md-6" style="padding:0;">
+                  <div class="full">
+                     <div class="contact_form white_heading_border">
+                        <div class="contact_form_inner">
+                           <div class="full_heading white_fonts heading_main heading_style_1">
+                              <h2>Contact <span>us</span></h2>
+                           </div>
+                           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                           <div class="form_contact"> -->
+                              <!-- form -->
+                              <!-- <form action="index.html">
+                                 <fieldset>
+                                    <div class="field">
+                                       <input type="text" name="name" placeholder="Your name" required="">
+                                    </div>
+                                    <div class="field">
+                                       <input type="text" name="name" placeholder="Your phone" required="">
+                                    </div>
+                                    <div class="field">
+                                       <input type="email" name="email" placeholder="Email" required="">
+                                    </div>
+                                    <div class="field">
+                                       <textarea name="messager" placeholder="Messager" required=""></textarea>
+                                    </div>
+                                    <div class="field">
+                                       <button class="field_bt">Send</button>
+                                    </div>
+                                 </fieldset>
+                              </form> -->
+                              <!-- end form -->
+                          <!--  </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+      <!-- end section -->
+      <!-- footer -->
+      <!-- <footer class="footer_style_2">
+         <div class="footer_top">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 margin_bottom_30">
+                     <div class="full width_9" style="margin-bottom:25px;"> <a href="index.html"><img class="img-responsive" width="250" src="week1/images/logo.png" alt="#"></a> </div>
+                     <div class="full width_9">
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                     </div>
+                     <div class="full width_9">
+                        <p>the vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati..</p>
+                     </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 margin_bottom_30">
+                     <div class="full">
+                        <div class="footer_blog_2 width_9">
+                           <h3>Twitter Feed</h3>
+                           <p><i class="fa fa-twitter"></i> Creative_Talent - 26 mins
+                              Te invitamos a seguir la cta. de WEntrepreneur_ ¡Atrévete! #Emprendimiento #PyMES #Economía #Bussines #Negocios https://t.co/Y7tZMmxGHn
+                           </p>
+                           <p><i class="fa fa-twitter"></i> Creative_Talent - 26 mins
+                              Te invitamos a seguir la cta. de WEntrepreneur_ ¡Atrévete! #Emprendimiento #PyMES #Economía #Bussines #Negocios https://t.co/Y7tZMmxGHn
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 margin_bottom_30">
+                     <div class="full">
+                        <div class="footer_blog_2">
+                           <h3>Social</h3>
+                        </div>
+                     </div>
+                     <div class="full">
+                        <ul class="footer-links">
+                           <li><a href="#"><i class="fa fa-facebook"></i> 256 Likes</a></li>
+                           <li><a href="#"><i class="fa fa-github"></i> 57+ Projects</a></li>
+                           <li><a href="#"><i class="fa fa-twitter"></i> 1,258 Followers</a></li>
+                           <li><a href="#"><i class="fa fa-pinterest"></i> 2538+ Pins</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 margin_bottom_30">
+                     <div class="full">
+                        <div class="footer_blog_2 width_9">
+                           <h3>Blog</h3>
+                        </div>
+                        <div class="blog_post_footer">
+                           <div class="blog_post_img"> <img width="80" height="80" src="week1/images/scr1.png" alt="#"> </div>
+                           <div class="blog_post_cont">
+                              <p class="date">July 22, 2015</p>
+                              <p class="post_head">Round and round like a carousel</p>
+                           </div>
+                        </div>
+                        <div class="blog_post_footer">
+                           <div class="blog_post_img"> <img width="80" height="80" src="week1/images/scr2.png" alt="#"> </div>
+                           <div class="blog_post_cont">
+                              <p class="date">July 22, 2015</p>
+                              <p class="post_head">Round and round like a carousel</p>
+                           </div>
+                        </div>
+                        <div class="blog_post_footer">
+                           <div class="blog_post_img"> <img width="80" height="80" src="week1/images/scr3.png" alt="#"> </div>
+                           <div class="blog_post_cont">
+                              <p class="date">July 22, 2015</p>
+                              <p class="post_head">Round and round like a carousel</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div> -->
+         <!-- footer bottom -->
+         <!-- <div class="footer_bottom">
+            <p>Dessigned and developed by <strong>html.design</strong></p>
+         </div>
+      </footer> -->
+      <!-- end footer -->
+      <!--=========== js section ===========-->
+      <!-- jQuery (necessary for Bootstrap's JavaScript) -->
+      <!-- <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script> -->
+      <!-- wow animation -->
+      <!-- <script src="js/wow.js"></script> -->
+      <!-- custom js -->
+     <!--  <script src="js/custom.js"></script> -->
+      <!-- google map js -->
+      <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script> -->
+      <!-- end google map js -->
+   <!-- </body>
+</html> -->
