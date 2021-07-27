@@ -106,8 +106,8 @@
                <!-- featured image -->
                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5" data-wow-duration="1s">
                   <div class="full">
-                     <div class="center"><img src="week10/images/week4.1.png" alt="#" /></div> <br> <br>
-                     <div class="center"><img src="week10/images/week4.2.png" alt="#" /></div>
+                     <div class="center"><img src="week10/images/week10.1.jpg" alt="#" /></div> <br> <br>
+                     <div class="center"><img src="week10/images/week10.2.jpg" alt="#" /></div>
 
                      <!-- <video width="720" height="540" controls muted>
                      <source src="week4/images/Week 4 Harvard v12.mp4" type="video/mp4">  -->
@@ -121,19 +121,43 @@
                <!-- featured cont -->
                <div class="col-md-6 cont_theme_blog">
                   <div class="full">
-                     <h3>Design Process</h3>
-                     <p>
+                     <h3>Getting the Stepper Motor to Work</h3>
+                     <p>During the lecture, the first thing that I needed to do was to learn how to use the Stepper Motors. Following this <a rel="nofollow" href="https://nathanmelenbrink.github.io/intro-dig-fab/10_machines/steppers.html">tutorial</a> for Stepper Motor Control, I was able to easily build the circuit. First, I used the multimeter to determine which cables on the Stepper Motor were matching with one another. I saw that it was in the same order as the motor in the tutorial. <br> <br>
+                     Afterwards, with the help of <a rel="nofollow" href="https://www.pololu.com/product/2134">this website</a>, I arranged the current going thorugh the stepper motor driver using a small screw and my multimeter. The circuit seemed to be done, so I uploaded the required libraries to power a Stepper Motor. <br> <br>
+                     I uploaded to first example code to my Huzzah Board, and it worked perfectly! The motor was making small steps, and I sticked a sticker on it so that it can be more easily noticed. Next, I tried the second example code given in the tutorial. This worked perfectly as well. Now that I knew how to work with the Stepper Motor, I could start my assignment for this week.
                      </p>
                   </div>
+
                </div>
+
+                   <div>
+            <br><br> <br><br> <video width="920" height="640" controls muted>
+                     <source src="week10/images/video1.mp4" type="video/mp4">  <br><br> <br><br> 
+            </div>
+
+                <div>
+            <br><br> <br><br> <video width="920" height="640" controls muted>
+                     <source src="week10/images/video2.mp4" type="video/mp4">  <br><br> <br><br> 
+            </div>
+
                <!-- end featured cont -->
             </div>
             <div class="row margin_bottom_30">
                <!-- featured cont -->
                <div class="col-md-6 cont_theme_blog">
                   <div class="full">
-                     <h3>Building the Assembly</h3>
-                     <p> </p> <br><br>
+                     <h3>Building the "Smart Organizer"</h3>
+                     <p>For the assignment, I needed to make a machine that is controlled from a computer or phone while using a stepper motor. I realized that my table was getting really messy with all the wires, electronic components, and all the other materials from the kit. Therefore, I thought of making a device that would arrange these materials.<br><br> 
+
+                      First, I needed to transfer the Stepper motor's motion to another object which would make the base of my new device. I took my cleaning robot from <a rel="nofollow" href="week4.html">week 4</a>, and detached the back wheel. The hole in the middle of the wheel was too small for the Stepper Motor's shaft. Therefore, I drilled a bigger hole on the wheel, and it was now fitting the Stepper motor perfectly. <br><br> 
+
+                     I used one of the example codes from the <a rel="nofollow" href="https://nathanmelenbrink.github.io/intro-dig-fab/10_machines/steppers.html">tutorial</a> to see if the wheel would rotate with the motor, and it seemed to work just as I wanted. Now, I needed a larger base to place all the materials on it. I found a cardboard plate and sticked it to the wheel. In my first trial, I just made the wheel rotate forever, to see if there was any issues with my design. Everything was functioning as it should, so I could now go ahead and make it controllable using my computer. <br><br> 
+
+                     For this purpose, I took certain sections of the Simple Wifi Server Code from <a rel="nofollow" href="week9.html">week 9</a>, and merged it with my Stepper Motor code on Arduino. I wanted to write a code that would rotate the plate approximately 45 degrees, so that it would bring the next object on the plate infront of the user. Hence, I changed the code in a way that the motor would move a certain number of steps (I ended up using 895 steps because it seemed to give the best results for what I was trying to accomplish) instead of rotating forever. I linked this code with <a rel="nofollow" href="https://firebase.google.com/">Google Firebase</a>, and changed the commands. <br><br> 
+
+                     In the final format, the Firebase interface shows a "Waiting" writing to start with. If you type in "NEXT", the plate rotates approximately 45 degrees clockwise, and brings the next material to you. If you type in "BACK", the plate rotates approximately 45 degrees counter-clockwise, and brings back the previous material to you. I really liked the final results, and plan on improving the Firebase web interface in the future.
+
+                     </p> <br><br>
                   </div>
                </div>
                <!-- end featured cont -->
@@ -141,37 +165,54 @@
                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5" data-wow-duration="1s">
                   <div class="full">
                      <br><br><br><br><br><br>
-                     <div class="center"><img src="week10/images/week4.3.jpg" alt="#" /></div> <br><br>
-                     <div class="center"><img src="week10/images/week4.4.jpg" alt="#" /></div><br><br>
-                     <div class="center"><img src="week10/images/week4.5.jpg" alt="#" /></div><br><br>
-                     <div class="center"><img src="week10/images/week4.6.jpg" alt="#" /></div><br><br>
+                     <div class="center"><img src="week10/images/week10.3.jpg" alt="#" /></div> <br><br>
+                     <div class="center"><img src="week10/images/week10.4.jpg" alt="#" /></div><br><br>
+                     <div class="center"><img src="week10/images/week10.5.jpg" alt="#" /></div><br><br>
+                     <!-- <div class="center"><img src="week10/images/week4.6.jpg" alt="#" /></div><br><br>
                      <div class="center"><img src="week10/images/week4.7.jpg" alt="#" /></div><br><br>
                      <div class="center"><img src="week10/images/week4.8.jpg" alt="#" /></div><br><br>
-                     <div class="center"><img src="week10/images/week4.9.jpg" alt="#" /></div><br><br>
+                     <div class="center"><img src="week10/images/week4.9.jpg" alt="#" /></div><br><br> -->
                   </div>
 
                </div>
 
-                <br><br><br><br><br><br><br><br>
-                  <img src="week10/images/week4.10.jpg" alt="#" style="width:1400px;height:500px;"> <br><br><br><br><br><br><br><br><br><br><br><br>
+               <div>
+            <br><br> <br><br> <video width="920" height="640" controls muted>
+                     <source src="week10/images/video3.mp4" type="video/mp4">  <br><br> <br><br> 
+            </div>
+
+            <div>
+            <br><br> <br><br> <video width="920" height="640" controls muted>
+                     <source src="week10/images/video4.mp4" type="video/mp4">  <br><br> <br><br> 
+            </div>
+
+            <div>
+            <br><br> <br><br> <video width="920" height="640" controls muted>
+                     <source src="week10/images/video5.mp4" type="video/mp4">  <br><br> <br><br> 
+            </div>
+
+
+
+                <!-- br><br><br><br><br><br><br><br>
+                  <img src="week10/images/week4.10.jpg" alt="#" style="width:1400px;height:500px;"> <br><br><br><br><br><br><br><br><br><br><br><br> -->
 
                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5" data-wow-duration="1s">
                   <div class="full">
-                     <br><br> <div class="center"><img src="week10/images/week4.11.jpg" alt="#" /></div> <br><br><br><br>
-                     <div class="center"><img src="week10/images/week4.12.jpg" alt="#" /></div><br><br>
+                     <!-- <br><br> <div class="center"><img src="week10/images/week4.11.jpg" alt="#" /></div> <br><br><br><br>
+                     <div class="center"><img src="week10/images/week4.12.jpg" alt="#" /></div><br><br> -->
                   </div>
                </div>
                <!-- end featured image -->
                <!-- featured cont -->
                <div class="col-md-6 cont_theme_blog">
                   <div class="full">
-                     <h3>Getting the Motor to Work</h3>
+                     <!-- <h3>Getting the Motor to Work</h3> -->
                      <p></p>
                   </div>
                </div>
                <div class="col-md-6 cont_theme_blog">
                   <div class="full">
-                     <h3>Things to Consider</h3>
+                     <!-- <h3>Things to Consider</h3> -->
                      <p></p>
                   </div>
                </div>
@@ -184,7 +225,7 @@
                <!-- featured image -->
                <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5" data-wow-duration="1s">
                   <div class="full">
-                     <div class="center"><img src="week10/images/week2.4.png" alt="#" /></div>
+                     <!-- <div class="center"><img src="week10/images/week2.4.png" alt="#" /></div> -->
                   </div>
                </div>
                <!-- end featured image -->
