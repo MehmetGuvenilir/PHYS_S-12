@@ -239,7 +239,9 @@
 
                       Just like last time, I used parameters for every important dimension so that I can alter these values later on if I need to. Now that all the holes were done, I needed to sketch the shape of the blades. I had to change the size of the blades as well to get them to fit inside the new size limits. I used a three point arc tool to get the shape of these blades, and recorded everything on the parameters. I made sure that I used the right directions for the blades this time since I had a lot of trouble with that in the previous model. <br><br>
 
-                      Before finishing the sketch, I decided to add the rquired offsets - I decided to these at the beginning this time since it gets harder to do after creating all the components. I added a 0.2mm offset to the blade holes just like last time. The purpose of this was to make sure that the the printed pieces would be able to fit inside their respective holes in real life. This time, I added a small offset for the screw and shaft holes as well, so that I can easily attach all the components together after printing the pieces. Finally I added another circle in the middle that would represent the lid piece.  
+                      Before finishing the sketch, I decided to add the rquired offsets - I decided to these at the beginning this time since it gets harder to do after creating all the components. I added a 0.2mm offset to the blade holes just like last time. The purpose of this was to make sure that the the printed pieces would be able to fit inside their respective holes in real life. This time, I added a small offset for the screw and shaft holes as well, so that I can easily attach all the components together after printing the pieces. Finally I added another circle in the middle that would represent the lid piece.  <br><br>
+
+                      <a href='final/images/sketch.stl'>You can download the main sketch here</a> <br><br>
 
                      </p>
                   </div>
@@ -279,7 +281,11 @@
 
                      I opened a new design, and inserted all of these components inside it. I used this file to build the whole assembly. I first placed the lid on top of the Guide Plate. Using the m16 bolt from my previous design, I connected the two components together with rigid joints. However, since I decreased the size of my design, I had a hard time getting the screws to fit. I decided to cut a section of the washers, and everything worked perfectly afterwards. I followed the same process to connect the Guide Plate & Lid for the other end of the wind turbine. Then, I inserted three copies of the blade that I created. I attached each blade inside their respective holes via slider joints. The wind turbine was now assembled. <br><br>
 
-                     I created a shaft, and a symbolic box to have something that the wind turbine could be placed on. I connected the shaft to the wind turbine with a rigid joint, and then connected the shaft's other end to the box using a revolute joint. This would allow the whole assembly to rotate together. Finally, I arranged the materials of the components so that they could be easily told apart. I also played around with the background & lighting, and used Fusion 360's Rendering section to get some final images.
+                     I created a shaft, and a symbolic box to have something that the wind turbine could be placed on. I connected the shaft to the wind turbine with a rigid joint, and then connected the shaft's other end to the box using a revolute joint. This would allow the whole assembly to rotate together. Finally, I arranged the materials of the components so that they could be easily told apart. I also played around with the background & lighting, and used Fusion 360's Rendering section to get some final images. <br><br>
+
+                     <a href='final/images/blade.stl'>Download the Blade</a> <br><br>
+                     <a href='final/images/guide-plate.stl'>Download the Guide Plate</a> <br><br>
+                     <a href='final/images/lid.stl'>Download the Lid</a> <br><br>
 
                      </p>
                   </div>
@@ -378,7 +384,10 @@
 
                      I also needed a different coupler for the upper part of the wind turbine, just to hold the other shaft in place. This was a lot more simple; I once again created a circle that was a bit bigger than the hole. I created a new sketch on this circle, and sketched the shape of the shaft I was using based on. the values I just recorded for the previous one. I extruded all the sketches, and I now had the piece that would fix the shaft inside the larger holes. <br><br>
 
-                     I inserted these couplers inside my assembly folder, and attached them to their respective holes via rigid joints. Then, I attached the new shaft inside the holes, and attached the Stepper Motor to the coupler at the bottom. Everything seemed to be right now, and I managed to alter my Savonius Wind Turbine design so that I can connect it to the Stepper Motor. 
+                     I inserted these couplers inside my assembly folder, and attached them to their respective holes via rigid joints. Then, I attached the new shaft inside the holes, and attached the Stepper Motor to the coupler at the bottom. Everything seemed to be right now, and I managed to alter my Savonius Wind Turbine design so that I can connect it to the Stepper Motor. <br><br>
+
+                     <a href='final/images/stepper.stl'>Download the Stepper Coupler</a> <br><br>
+                     <a href='final/images/shaft.stl'>Download the Shaft Coupler</a> <br><br>
 
                      </p>
                   </div>
@@ -478,6 +487,74 @@
                   </div>
 
 
+             <!--   hshdjsjsjjsj -->
+
+             <div class="col-md-6 cont_theme_blog">
+                  <div class="full">
+                     <h3>Building the Circuit</h3>
+                     <p> After all of the components were manufactured, I could begin to work on the circuit that I need to get this savonius wind turbine to work. I followed the <a rel="nofollow" href="https://www.instructables.com/Portable-Savonius-Wind-Turbine-With-Deflectors/">project tutorial</a> that I mentioned before to correctly build the required circuit. I needed some components that I didn't have, so I quickly ordered those. <br><br>
+
+                     The first piece that I ordered was a <a rel="nofollow" href="https://www.amazon.com/MCIGICM-voltage-regulator-Regulator-Positive/dp/B07BDFMQF6/ref=as_li_ss_tl?crid=361MNHPTZBCTH&dchild=1&keywords=7805+voltage+regulator&qid=1594139832&sprefix=7805+,aps,794&sr=8-3&linkCode=sl1&tag=aca148-20&linkId=872b483648504ada9f81d5411879407f&language=en_US">5V Voltage Regulator</a> which is a three-terminal positive regulator with a 5V fixed output voltage. This fixed regulator provides a local regulation, internal current limiting, thermal shut-down control, and safe area protection for the project. Since the voltage supplied by the wind turbine would not be the same at all times, I needed this component to supply a fixed voltage to make sure that I did not damage anything. <br><br>
+
+                     The second component that I ordered was a <a rel="nofollow" href="https://www.amazon.com/Bridgold-KBP206-Rectifier-Electronic-Silicon/dp/B07RYVMSSP/ref=as_li_ss_tl?_encoding=UTF8&pd_rd_i=B07RYVMSSP&pd_rd_r=3bb864c6-1ef2-4372-9c4a-3a2ccdbf5256&pd_rd_w=EJrQ7&pd_rd_wg=Cd4GO&pf_rd_p=bdc67ba8-ab69-42ee-b8d8-8f5336b36a83&pf_rd_r=Y5HMVJA98JRXKD80DCXN&psc=1&refRID=Y5HMVJA98JRXKD80DCXN&linkCode=sl1&tag=aca148-20&linkId=a07fc88f0a54844ab951815e41f7587b&language=en_US">Diode Bridge Rectifier</a>. Bridge rectifiers are discrete semiconductors that convert an input AC current into a DC current as an output. Bridge rectifiers feature four diodes in a bridge configuration that provides the same polarity of output voltage for either polarity of input voltage. The ones that I got were for 4 Amps. <br><br>
+
+                     And the last component that I ordered was a <a rel="nofollow" href="https://www.amazon.com/Degree-Standard-Female-Solder-Connector/dp/B07T82FB1M/ref=sr_1_5?dchild=1&keywords=usb+female+connector&qid=1628165999&sr=8-5">USB Female Connector</a>. This would allow me to connect a USB to the end of my circuit to draw the power that the savonius wind turbine generates. I could also use these to connect my circuit to a microcontroller in order to power it. Hencei this was a crucial component that would allow me to transfer the genereated voltage. <br><br>
+
+
+                     When the 5V Voltage Regulators and the Diode Bridge Rectifiers arrived, I began to build the circuit. There was an image on the tutorial that displayed how each component should be connected to one another. However, I was planning on building the circuit on a Breadboard, and therefore decided to use <a rel="nofollow" href="https://www.tinkercad.com/">Tinkercad</a> before really building the circuit. I designed my circuit on Tinkercad, but had to use some different components (with same number of pins) instead of certain components that I couldn't find in the Tinkercad library. I used a RGB LED to represent the Diode Bridge Rectifier. Instead of a Stepper Motor, I had to use a DC Motor with Encoder, and used only four of its cables. Finally, I used diode to represent the Female USB Connector. Even though I had to many different components in this design, it gave me a better idea of how to wire my circuit on a Breadboard. <br><br>
+
+                     I built my circuit, and everything seemed to be connected right. One problem that I had while building the circuit was with the Diode Bridge Rectifiers. These components were not designed according to a Breadboard, and therefore its legs would not fit into the hoples of the Breadboard. I had to use a pushpin to enlarge these holes so that the Diode Bridge Rectifier would fit inside. The pushpin method worked, and I was able to fully connect my circuit. However, the USB Female Connectors that I ordered were running late, and I didn't have any way of transferring the power drawn from the wind turbine. I couldn't take the risk of just waiting for the USB Female Connectors to arrive, so I had to come up with a different solution. After going through all the materials in the kit, I finally came up with an idea. <br><br>
+
+                     I got the DC female connector / input from the battery pack that we had, and connected it to where I was going to attach the USB Female Connector. Now, I needed a DC to USB cable so that I can attach this to another device. I went to a lot of stores that sold electric components but none of them had a USB to DC cable that would fit to the component that I had. I didn't have enough time to order one, so I had to figure something out. Eventually, I went to a local electrician, and asked for their help to connect two cables. I found one USB cable and a DC cable. I cut these cables with a wire stripper, and connected the two together with the help of the electrician. We then covered this opening with some tape so that it would be safer. After assembling this new cable, I needed to transfer this to a USB input. Therefore, I found and bought a double female USB connector (which is a component that has USB Female Connectors on both ends). This component wouldn't have worked with my original design, but I could attach it to the end of my new cable. Now that the other end of this component was empty, I had a USB Female Connector that is connected to the end of my circuit. I tried to power this circuit with a blue LED just to see if it was working. Everything seemed to function correctly, and I decided to keep the LED on the circuit so that I can tell when it's really working. <br><br>
+
+                     I finally used the multimeter to measure some values. I spinned the Stepper Motor with a drill to get a continous current from the motor. While the motor was rotating, I measured the values from the end of the circuit (where I connected the DC Female Connector). I read approximately 3.6V to 4V, and 120 mA at this point. These were reasonable values that I could work with. Thus, my circuit was also completed, and I could begin to assemble the Savonius Wind Turbine to connect it to my Stepper Motor.
+
+
+
+
+
+                     </p>
+                  </div>
+               </div>
+
+               <!-- <video width="720" height="540" controls muted>
+                     <source src="final/images/IMG_5753.mp4" type="video/mp4">  -->
+
+
+               <!-- end featured cont -->
+               <!-- featured image -->
+               <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5" data-wow-duration="1s">
+                  <div class="full">
+                     <br><br><br><br><br><br>
+                     <div class="center"><img src="final/images/final.32.png" alt="#" /></div> <br><br>
+                     <div class="center"><img src="final/images/final.33.jpg" alt="#" /></div> <br><br>
+                     <div class="center"><img src="final/images/final.34.jpg" alt="#" /></div> <br><br><br>
+                     <div class="center"><img src="final/images/final.35.jpg" alt="#" /></div> <br><br>
+                     <div class="center"><img src="final/images/final.35.5.jpg" alt="#" /></div> <br><br>
+                     <div class="center"><img src="final/images/final.36.jpg" alt="#" /></div> <br><br>
+                     <div class="center"><img src="final/images/final.37.jpg" alt="#" /></div> <br><br>
+
+                  </div>
+
+                  <div></div>
+
+               <div>
+                  <div>
+                  <video width="720" height="540" controls muted>
+                     <source src="final/images/video11.mp4" type="video/mp4"> <br><br>
+                  </div>
+                  <br><br>
+               </div>
+
+               <!-- </div>
+
+               <div>
+                     <img src="final/images/final.30.png" alt="#" style="width:1000px;height:500px;"> <br><br>
+                  </div>
+               <div>
+                     <img src="final/images/final.31.png" alt="#" style="width:1000px;height:500px;"> <br><br>
+                  </div>
+ -->
 
 
 
