@@ -17,6 +17,13 @@ text-gray: #6b6b6b;
 
 */
 
+.benimdiv {
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+
+}
+
 .imageBack {
   width: auto;
   position: absolute;
